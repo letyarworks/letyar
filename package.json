@@ -1,0 +1,49 @@
+{
+  "name": "letyar",
+  "version": "1.0.0",
+  "description": "A practical developer toolkit for building, checking, and maintaining modern web and software projects.",
+  "main": "./dist/cli.js",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letyarworks/letyar.git"
+  },
+  "keywords": [
+    "developer",
+    "cli",
+    "developer-tools",
+    "typescript",
+    "nodejs",
+    "web-development",
+    "software"
+  ],
+  "author": "Aung Bo Bo Kyaw",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/letyarworks/letyar/issues"
+  },
+  "homepage": "https://github.com/letyarworks/letyar#readme",
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.0"
+  },
+  "bin": {
+    "letyar": "./dist/cli.js"
+  },
+  "types": "./dist/cli.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
