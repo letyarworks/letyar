@@ -19,7 +19,7 @@ describe("letyar check", () => {
         existsSync(join(testDir, file));
       }
 
-      execSync("letyar init", {
+     execSync(`node "${cliPath}" init`, {
         cwd: testDir,
         encoding: "utf8"
       });

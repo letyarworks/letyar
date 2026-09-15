@@ -10,7 +10,7 @@ describe("letyar check failure", () => {
     const cliPath = resolve("dist/cli.js");
 
     try {
-      execFileSync("letyar", ["init"], {
+      execFileSync("node", [cliPath, "init"], {
         cwd: testDir,
         encoding: "utf8"
       });
